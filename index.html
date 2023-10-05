@@ -3,17 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- main css file -->
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- remixicon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css"
+    />
     <title>JavaScript Modal - By Shahruk Maharuj</title>
   </head>
   <body>
+    <!-- modal button -->
     <div class="container">
       <h2>Modern JavaScript Modal</h2>
-      <div class="modal">
-        <button>Show Modal 1</button>
-        <button>Show Modal 2</button>
-        <button>Show Modal 3</button>
+      <div class="show-modal">
+        <button>JavaScript? 😍</button>
+        <button>Learn JS! 📝</button>
+        <button>Aww! Open 🙈</button>
       </div>
+      <!-- modal popup -->
+      <div class="modal hidden">
+        <button class="close-modal">
+          <i class="ri-close-fill"></i>
+        </button>
+        <h1>Modern JavaScript Interactive Modal Window</h1>
+        <p>
+          Check out our easy-to-use pop-up box. It shows you important stuff
+          without making you leave the page, making things smoother for you.
+          This little box is here to help, not interrupt. It's quick, clear, and
+          made just for you. So, whenever you see it pop up, know there's
+          something special inside!
+        </p>
+      </div>
+      <!-- blur overlay -->
+      <div class="overlay hidden"></div>
     </div>
     <script src="./js/script.js"></script>
   </body>
